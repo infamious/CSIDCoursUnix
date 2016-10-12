@@ -1,0 +1,17 @@
+Voici les differentes commandes!
+
+- Recherche et affiche des fichiers dans le dossiers courant qui posséde ".java" dans leurs nom
+find  . -name "*.java"
+
+
+- Compte le nombre de fichier qui posséde ".java" dans leurs nom
+find  . -name \*.java | wc -l
+
+- Compte le nombre de lignes des fichiers qui posséde ".java" dans leurs nom
+find . -name \*.java -exec wc -l {} \;
+
+-Liste les 10 plus gros fichiers 
+find . -name \*.java -exec wc -l {} \; | sort -n | tail
+
+Fait une sommes du nombre de lignes contenue dans tous les fichiers "*.java"
+resultat=0;for f in $(find . -name \*.java); do count=$( cat $f | wc -l ) resultat=$(( $resultat + $count )); done; echo $resultat
