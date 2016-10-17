@@ -10,3 +10,5 @@ git status // Permet de voir les modification
 git log     // Permet de voir tous les commits 
 git checkout "nom branche" // permet de changer branche
 git merge "nom fichier" //  Permet de fusionner deux fichiers en un seul
+
+Mind map GIT: https://atlas.mindmup.com/2016/10/6890b65075500134b7c379a847f37cbb/git/index.html
