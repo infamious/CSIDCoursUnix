@@ -15,3 +15,5 @@ find . -name \*.java -exec wc -l {} \; | sort -n | tail
 
 Fait une sommes du nombre de lignes contenue dans tous les fichiers "*.java"
 resultat=0;for f in $(find . -name \*.java); do count=$( cat $f | wc -l ) resultat=$(( $resultat + $count )); done; echo $resultat
+
+Mind Map Unix: https://atlas.mindmup.com/2016/10/2b660ea075480134b7c379a847f37cbb/shell/index.html
