@@ -1,0 +1,12 @@
+Commande git de base 
+
+git add. 
+git commit -m “Mon premier commit”
+echo  “add…” >> file1.txt
+git add .
+git commit - “Deuxième” 
+
+git status // Permet de voir les modification
+git log     // Permet de voir tous les commits 
+git checkout "nom branche" // permet de changer branche
+git merge "nom fichier" //  Permet de fusionner deux fichiers en un seul
